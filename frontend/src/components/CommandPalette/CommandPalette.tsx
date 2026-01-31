@@ -7,6 +7,7 @@ import { Search, Sparkles, Loader2 } from 'lucide-react';
 import {
     Dialog,
     DialogContent,
+    DialogDescription,
     DialogHeader,
     DialogTitle,
 } from '@/components/ui/dialog';
@@ -97,6 +98,9 @@ export function CommandPalette() {
             <DialogContent className="w-[calc(100%-2rem)] rounded-xl md:w-full max-w-2xl p-0 gap-0 max-h-[85vh] overflow-hidden">
                 <DialogHeader className="sr-only">
                     <DialogTitle>AI Command Palette</DialogTitle>
+                    <DialogDescription>
+                        Search for actions, metrics, and users within the dashboard.
+                    </DialogDescription>
                 </DialogHeader>
 
                 {/* Input Section */}

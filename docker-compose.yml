@@ -14,7 +14,7 @@ services:
     build:
       context: ./frontend
       args:
-        - VITE_API_URL=http://localhost:8000
+        - VITE_API_URL=https://ai-search.anuragkurmi.dev
     container_name: semantic-frontend
     ports:
       - "3001:80"
