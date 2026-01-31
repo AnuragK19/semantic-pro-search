@@ -7,7 +7,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173
+      - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173,https://search-poc.anuragkurmi.dev
       - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
 
   frontend:
