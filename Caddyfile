@@ -1,0 +1,11 @@
+# Caddyfile for Semantic Pro Search
+
+# Backend (API)
+ai-search.anuragkurmi.dev {
+    reverse_proxy localhost:8000
+}
+
+# Frontend
+search-poc.anuragkurmi.dev {
+    reverse_proxy localhost:3001
+}

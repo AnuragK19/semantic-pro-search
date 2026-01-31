@@ -17,6 +17,6 @@ services:
         - VITE_API_URL=http://localhost:8000
     container_name: semantic-frontend
     ports:
-      - "3000:80"
+      - "3001:80"
     depends_on:
       - backend
