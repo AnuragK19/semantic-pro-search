@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: semantic-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - VITE_API_URL=http://localhost:8000
+    container_name: semantic-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
